@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html,
+/* Import Font */
+@layer base {
+	ol {
+		@apply list-decimal;
+	}
+
+	:root {}
+
+	div {
+		@apply transition-all duration-500 ease-in-out;
+	}
+
+	.container {
+		@apply max-w-screen-xl mx-auto;
+	}
+
+	@font-face {
+		font-family: "esthetique";
+		font-style: normal;
+		font-weight: 400;
+		src: local(""),
+			url(/assets/fonts/Esthetique/esthetique.otf) format("montserrattype");
+	}
+
+	@font-face {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 400;
+		src: url(/assets/fonts/Montserrat/Montserrat-Regular.ttf);
+	}
+
+	@font-face {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 600;
+		src: url(/assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+	}
+
+	@font-face {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/Montserrat/Montserrat-Bold.ttf);
+	}
+
+	@font-face {
+		font-family: "Montserrat";
+		font-style: normal;
+		font-weight: 900;
+		src: url(/assets/fonts/Montserrat/Montserrat-Black.ttf);
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		font-style: normal;
+		font-weight: 600;
+		src: url(/assets/fonts/SpaceGrotesk/SpaceGrotesk=SemiBold.ttf);
+	}
+
+	@font-face {
+		font-family: "Space Grotesk";
+		font-style: normal;
+		font-weight: 700;
+		src: url(/assets/fonts/SpaceGrotesk/SpaceGrotesk=Bold.ttf);
+	}
+
+	.greenPatern {
+		@apply bg-greenPatern inset-0 bg-contain -z-10 absolute overflow-hidden opacity-10 drop-shadow-md content-['*'];
+	}
+
+	body {
+		@apply bg-white;
+	}
+
+	#blog p {
+		@apply font-montserrat lg: text-2xl sm:text-xl text-lg font-normal;
+	}
+
+	.body {
+		@apply font-montserrat lg: text-2xl sm:text-xl text-lg font-normal;
+	}
+
+	.h2 {
+		@apply font-esthetique lg: text-5xl sm:text-4xl text-3xl;
+	}
+
+	.atribut li {
+		@apply font-montserrat lg: text-2xl sm:text-xl text-lg font-normal ml-6;
+	}
+
+	.atribut .rules {
+		@apply font-montserrat lg: text-2xl sm:text-xl text-lg font-normal;
+	}
+
+	.bodysmall {
+		@apply font-esthetique lg: text-xl sm:text-lg text-base font-normal;
+	}
+
+	.h3 {
+		@apply font-esthetique font-normal lg: text-4xl sm:text-3xl text-2xl;
+	}
+
+	.achievment ul {
+		@apply list-disc;
+	}
+
+
+	.scrollbar::-webkit-scrollbar {
+		width: 3px;
+	}
+
+	.scrollbar::-webkit-scrollbar-thumb {
+		background: #f69534;
+		border-radius: 3px;
+	}
+
+	.twibbon {
+		box-shadow: inset 0px 8.38095px 20.9524px rgba(0, 0, 0, 0.1);
+		font-size: 24px;
+		padding: 10px 20px;
+		outline: none;
+		font-family: "montserrat Sans", "sans-serif";
+	}
+
+	.twibbon::placeholder {
+		color: #555;
+	}
+
+	.overflow-style::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	.overflow-style::-webkit-scrollbar-thumb {
+		background: #033e50;
+		border-radius: 10px;
+	}
+
+	.overflow-style::-webkit-scrollbar-track {
+		background: #3e4a4a;
+		border-radius: 5px;
+	}
+
+	.fasdsf {
+		box-shadow: 0px 5px 10px -8px #000000 inset;
+	}
+}
