@@ -1,3 +1,4 @@
+'use client'
 import { HiLocationMarker } from 'react-icons/hi'
 import { MdEmail } from 'react-icons/md'
 import { BsFillTelephoneFill, BsSpotify } from 'react-icons/bs'
@@ -25,22 +26,22 @@ export default function Footer() {
             </div>
             <div className='flex flex-row justify-between items-center my-3'>
                 <div className='flex flex-row gap-3'>
-                    <div className='rounded-full p-2 bg-primary'>
+                    <div className='rounded-full p-2 bg-primary cursor-pointer' onClick={() => handleClick('https://page.line.me/ppr6936r?openQrModal=true')}>
                         <Image src='/assets/icons/Line.svg' width={20} height={20} alt={'logo-line'} />
                     </div>
-                    <div className='rounded-full p-2 bg-primary'>
+                    <div className='rounded-full p-2 bg-primary cursor-pointer' onClick={() => handleClick('https://www.instagram.com/raja_brawijaya/')}>
                         <BsInstagram className='text-[#f89434]' style={{ height: '20px', width: '20px' }} />
                     </div>
-                    <div className='rounded-full p-2 bg-primary'>
+                    <div className='rounded-full p-2 bg-primary cursor-pointer' onClick={() => handleClick('https://twitter.com/raja_brawijaya')}>
                         <AiOutlineTwitter className='text-[#f89434]' style={{ height: '20px', width: '20px' }} />
                     </div>
-                    <div className='rounded-full p-2 bg-primary'>
+                    <div className='rounded-full p-2 bg-primary cursor-pointer' onClick={() => handleClick('https://t.me/rajabrawijayaubhttps://www.tiktok.com/@rajabrawijayaub?')}>
                         <FaTiktok className='text-[#f89434]' style={{ height: '20px', width: '20px' }} />
                     </div>
-                    <div className='rounded-full p-2 bg-primary'>
+                    <div className='rounded-full p-2 bg-primary cursor-pointer' onClick={() => handleClick('https://www.youtube.com/channel/UCpNS1e8i6pgkxqxbdIPnUNQ')}>
                         <AiFillYoutube className='text-[#f89434]' style={{ height: '20px', width: '20px' }} />
                     </div>
-                    <div className='rounded-full p-2 bg-primary'>
+                    <div className='rounded-full p-2 bg-primary cursor-pointer' onClick={() => handleClick('https://open.spotify.com/user/31bdrd42myyndjftkeawbflaq57e?si=bb716cacda514257')}>
                         <BsSpotify className='text-[#f89434]' style={{ height: '20px', width: '20px' }} />
                     </div>
 
@@ -52,4 +53,7 @@ export default function Footer() {
         </footer>
 
     )
+}
+function handleClick(link: string) {
+    window.open(link, '_blank')
 }
