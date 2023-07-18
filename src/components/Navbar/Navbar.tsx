@@ -14,7 +14,7 @@ export default function Navbar() {
 
     const pathname = usePathname();
     const changeOnScroll = () => {
-        window.scrollY >= 200 ? setScrolled(true) : setScrolled(false);
+        window.scrollY >= 50 ? setScrolled(true) : setScrolled(false);
     }
 
     useEffect(() => {
