@@ -1,0 +1,7 @@
+.video::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #329D9C;
+    opacity: 80%;
+}
