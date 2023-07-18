@@ -1,0 +1,18 @@
+.patternKawung {
+    background-image: url("/assets/images/Kawung.png");
+    background-size: 50px 50px;
+    background-position: -10px;
+    @apply w-full h-[57px]
+}
+
+.bgImage{
+    background-image: url("/assets/images/RangkaianUtama.png");
+    background-size: 100%;
+}
+
+.logoCenterLeftSection {
+  position: absolute;
+  top: 280%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
