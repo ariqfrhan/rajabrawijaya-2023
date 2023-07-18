@@ -1,10 +1,12 @@
-import Jumbotron from '@/layout/Jumbotron/Jumbotron'
-import Image from 'next/image'
+import Jumbotron from '@/layout/Jumbotron/Jumbotron';
+import Perkenalan from '@/layout/Perkenalan/Perkenalan';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <>
-    <Jumbotron></Jumbotron>
+      <Jumbotron></Jumbotron>
+      <Perkenalan></Perkenalan>
     </>
-  )
+  );
 }
