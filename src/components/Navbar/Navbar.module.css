@@ -5,7 +5,7 @@
     bottom: 0;
     width: 0;
     transform: translateY(5px);
-    background: #F69534;
+    background: #56C596;
     transition: ease-in .3s;
 }
 
@@ -20,6 +20,6 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    background: #F69534;
+    background: #56C596;
     transition: ease-in .3s;
 }

@@ -14,7 +14,7 @@ export default function Navbar() {
 
     const pathname = usePathname();
     const changeOnScroll = () => {
-        window.scrollY >= 200 ? setScrolled(true) : setScrolled(false);
+        window.scrollY >= 50 ? setScrolled(true) : setScrolled(false);
     }
 
     useEffect(() => {
@@ -25,7 +25,7 @@ export default function Navbar() {
     })
 
     return (
-        <div className={`${pathname !== '/' ? 'bg-white' : scrolled ? 'bg-secondary transition duration-300' : 'bg-transparent'}
+        <div className={`${pathname !== '/' ? 'bg-transparent' : scrolled ? 'bg-secondary transition duration-300' : 'bg-transparent'}
     fixed w-full px-8 py-2 top-0 z-50 flex items-center justify-between md:px-12`}>
             <div className='hover:cursor-pointer lg-w-fit'>
                 <Link href={'/'}>
@@ -42,38 +42,38 @@ export default function Navbar() {
             <div className={`flex lg:static grow lg:pl-12 lg:justify-between fixed flex-col lg:flex-row top-0 bottom-0
             ${show ? 'left-20 right-0' : 'left-full -right-0'} bg-accent lg:bg-trans top-[80px] md:top-[90px] transition-all duration-500`}>
                 <Link href={'/'}
-                    className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
+                    className={`font-montserrat font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
                     ${styles.a} ${pathname == '/' ? styles.active : ''}`}
                 >
                     Beranda
                 </Link>
                 <Link href={'/berita-arkana'}
-                    className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
+                    className={`font-montserrat font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
                     ${styles.a} ${pathname == '/berita-arkana' ? styles.active : ''}`}
                 >
                     Berita Arkana
                 </Link>
                 <Link href={'/keliling-brawijaya'}
-                    className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
+                    className={`font-montserrat font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
                     ${styles.a} ${pathname == '/keliling-brawijaya' ? styles.active : ''}`}
                 >
                     Keliling Brawijaya
                 </Link>
                 <Link href={'/galeri'}
-                    className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
+                    className={`font-montserrat font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
                     ${styles.a} ${pathname == '/galeri' ? styles.active : ''}`}
                 >
                     Galeri
                 </Link>
                 <Link href={'/ukm'}
-                    className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
-                    ${styles.a} ${pathname == '/keliling-brawijaya' ? styles.active : ''}`}
+                    className={`font-montserrat font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
+                    ${styles.a} ${pathname == '/ukm' ? styles.active : ''}`}
                 >
                     UKM
                 </Link>
                 <Link href={'/faq'}
-                    className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
-                    ${styles.a} ${pathname == '/keliling-brawijaya' ? styles.active : ''}`}
+                    className={`font-montserrat font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
+                    ${styles.a} ${pathname == '/faq' ? styles.active : ''}`}
                 >
                     FAQ
                 </Link>
