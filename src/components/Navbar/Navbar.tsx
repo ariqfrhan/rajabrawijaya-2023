@@ -25,8 +25,8 @@ export default function Navbar() {
     })
 
     return (
-        <div className={`${pathname !== '/' ? 'bg-white' : scrolled ? 'bg-secondary transition duration-300' : 'bg-secondary'}
-    fixed w-full px-8 py-2 top-0 z-50 flex items-center justify-between`}>
+        <div className={`${pathname !== '/' ? 'bg-white' : scrolled ? 'bg-secondary transition duration-300' : 'bg-transparent'}
+    fixed w-full px-8 py-2 top-0 z-50 flex items-center justify-between md:px-12`}>
             <div className='hover:cursor-pointer lg-w-fit'>
                 <Link href={'/'}>
                     <Image
@@ -39,8 +39,8 @@ export default function Navbar() {
                     </Image>
                 </Link>
             </div>
-            <div className={`flex lg:static grow lg:justify-between fixed flex-col lg:flex-row top-0 bottom-0
-            ${show ? 'left-20 right-0' : 'left-full -right-0'} px-20  bg-accent lg:bg-trans top-[80px] md:top-[90px] transition-all duration-500`}>
+            <div className={`flex lg:static grow lg:pl-12 lg:justify-between fixed flex-col lg:flex-row top-0 bottom-0
+            ${show ? 'left-20 right-0' : 'left-full -right-0'} bg-accent lg:bg-trans top-[80px] md:top-[90px] transition-all duration-500`}>
                 <Link href={'/'}
                     className={`font-montserrat text-white font-semibold whitespace-nowrap my-4 relative ${pathname !== '/' ? 'text-primary' : 'text-white'}
                     ${styles.a} ${pathname == '/' ? styles.active : ''}`}
@@ -84,14 +84,14 @@ export default function Navbar() {
                 </a>
             </div>
             <div>
-            <div className='w-full'>
-                <a href='/rajaapps' target='_blank'>
-                    <button className={`hidden lg:block bg:trans border-2 px-4 py-2 rounded-lg font-semibold ${pathname !== '/' ? 'text-primary border-primary' : 'text-white border-white'}`}>
-                        RAJA Apps
-                    </button>
-                </a>
-            </div>
-            <button
+                <div className='w-full'>
+                    <a href='/rajaapps' target='_blank'>
+                        <button className={`hidden lg:block bg:trans border-2 px-4 py-2 rounded-lg font-semibold ${pathname !== '/' ? 'text-primary border-primary' : 'text-white border-white'}`}>
+                            RAJA Apps
+                        </button>
+                    </a>
+                </div>
+                <button
                     type='button'
                     className='w-6 h-6 lg:hidden'
                     onClick={() => {
