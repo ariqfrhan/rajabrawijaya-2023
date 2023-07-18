@@ -148,4 +148,9 @@
 	.fasdsf {
 		box-shadow: 0px 5px 10px -8px #000000 inset;
 	}
+
+	.header {
+		@apply font-SpaceGrotesk font-bold text-[80px]
+	}
+
 }
