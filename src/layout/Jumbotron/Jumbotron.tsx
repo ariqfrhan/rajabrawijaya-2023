@@ -19,7 +19,7 @@ export default function Jumbotron() {
                                 Rangkaian Acara Jelajah Almamater Universitas Brawijaya
                             </p>
                         </div>
-                        <img src='/assets/images/NAGA_1.png' className='z-10 absolute top-32 md:top-36 lg:top-40 lg:left-16 '></img>
+                        <img src='/assets/images/NAGA_1.png' className='z-10 absolute top-32 md:top-36 lg:top-28 lg:left-16 '></img>
                     </div>
                 </div>
                 <img src='/assets/images/awan_atas.png' className='w-full object-cover absolute lg:-bottom-20 -bottom-1'></img>
