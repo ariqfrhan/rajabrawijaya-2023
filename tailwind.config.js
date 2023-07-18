@@ -24,7 +24,7 @@ module.exports = {
         grey: "#333333",
       },
       fontFamily: {
-        estethique: ["esthetique", "serif"],
+        esthetique: ["esthetique", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
         SpaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
