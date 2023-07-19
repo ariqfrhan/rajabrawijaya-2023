@@ -86,10 +86,10 @@ const groupData = [
   },
 ];
 
-export default function page() {
+export default function Page() {
   const [quest, setQuest] = useState(null);
-  const [search, setSearch] = useState(null);
-  const [group, setGroup] = useState(null);
+  const [search, setSearch] = useState("");
+  const [group, setGroup] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [dataGroup, setDataGroup] = useState(groupData);
   const [dataQuest, setDataQuest] = useState(questData);
@@ -134,7 +134,7 @@ export default function page() {
                 onChange={(e) => {
                   setSearch(e.target.value);
                 }}
-              ></input>
+              />
             </div>
             <div className="flex items-center">
               {dataGroup.map((g) => (
@@ -144,7 +144,7 @@ export default function page() {
                   active={group}
                   changeGroup={(n) => setGroup(n)}
                   name={g.title}
-                ></DropdownFaq>
+                />
               ))}
             </div>
           </div>
@@ -170,7 +170,7 @@ export default function page() {
                     key={e.id}
                     id={e.id}
                     active={quest}
-                    toggle={(e) => {
+                    toggle={(e: any) => {
                       setQuest(e);
                     }}
                     quest={e.quest}

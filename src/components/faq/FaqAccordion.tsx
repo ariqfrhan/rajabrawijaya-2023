@@ -1,20 +1,28 @@
 import React from "react";
 
-export default function FaqAccordion(props) {
-    const isClicked = props.active === props.id;
+interface FaqAccordionProps {
+  key: string;
+  id: string;
+  active: string | null;
+  toggle: (e: string | null) => void;
+  quest: string;
+  answer: string;
+}
 
-    const toggleAccordion = () =>{
-        if (isClicked) {
-            props.toggle(null);
-        }else{
-            props.toggle(props.id)
-        }
+export default function FaqAccordion(props: FaqAccordionProps) {
+  const isClicked = props.active === props.id;
+
+  const toggleAccordion = () => {
+    if (isClicked) {
+      props.toggle(null);
+    } else {
+      props.toggle(props.id);
     }
+  };
 
   return (
     <div>
       <button
-        key={props.customKey}
         className="h-fill bg-primary rounded-lg mb-3 text-start w-full"
         onClick={toggleAccordion}
       >
@@ -22,7 +30,7 @@ export default function FaqAccordion(props) {
           className={`bg-primary text-white py-2 px-4 flex justify-between items-center rounded-lg font-montserrat`}
         >
           <div className="flex items-center">
-            <img src="/assets/images/kawung-01.png"></img>
+            <img src="/assets/images/kawung-01.png" />
             <p
               className={`${
                 props.active == props.id ? "font-normal" : "font-semibold"
@@ -31,7 +39,15 @@ export default function FaqAccordion(props) {
               {props.quest}
             </p>
           </div>
-          <img src='/assets/icons/arrdown.svg' width={20} className={`${isClicked ? 'rotate-0 transition-all duration-300' : 'rotate-90 transition-all duration-300'}`}></img>
+          <img
+            src="/assets/icons/arrdown.svg"
+            width={20}
+            className={`${
+              isClicked
+                ? "rotate-0 transition-all duration-300"
+                : "rotate-90 transition-all duration-300"
+            }`}
+          />
         </div>
       </button>
       <div
