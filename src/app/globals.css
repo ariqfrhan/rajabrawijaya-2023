@@ -88,6 +88,37 @@
 	.h2 {
 		@apply font-esthetique lg:text-5xl sm:text-4xl text-3xl;
 	}
+	
+	.h3 {
+		@apply font-esthetique font-normal lg:text-4xl sm:text-3xl text-2xl;
+	}
+
+	/* Typography */
+
+	h1 {
+		font-size: 56px;
+		line-height: 61.6px;
+	}
+	h2 {
+		font-size: 48px;
+		line-height: 52.8px;
+	}
+	h3 {
+		font-size: 40px;
+		line-height: 44px;
+	}
+	h4 {
+		font-size: 32px;
+		line-height: 35.2px;
+	}
+	h5 {
+		font-size: 24px;
+		line-height: 26.4px;
+	}
+	h6 {
+		font-size: 20px;
+		line-height: 22px;
+	}
 
 	.atribut li {
 		@apply font-montserrat lg:text-2xl sm:text-xl text-lg font-normal ml-6;
@@ -101,9 +132,6 @@
 		@apply font-esthetique lg:text-xl sm:text-lg text-base font-normal;
 	}
 
-	.h3 {
-		@apply font-esthetique font-normal lg:text-4xl sm:text-3xl text-2xl;
-	}
 
 	.achievment ul {
 		@apply list-disc;
@@ -152,5 +180,4 @@
 	.header {
 		@apply font-SpaceGrotesk font-bold text-[80px]
 	}
-
 }
